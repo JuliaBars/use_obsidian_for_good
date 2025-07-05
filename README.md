@@ -24,3 +24,6 @@
 
 ---
 Если возникли проблемы с написание запросов в Dataview или использованию js кода внутри шаблонов - обращайтесь к DeepSeek он прекрасно разбирается в этом...
+
+![2025-07-05_13-14-33](https://github.com/user-attachments/assets/ccba37f0-1235-4836-a944-6abe24be273e)
+![2025-07-05_13-14-53](https://github.com/user-attachments/assets/c06773c7-be81-4b10-9327-ef63ccffe2b0)
