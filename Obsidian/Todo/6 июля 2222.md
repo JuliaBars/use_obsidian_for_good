@@ -7,14 +7,14 @@
 ```dataview
 TABLE WITHOUT ID file.link AS Читать
 WHERE contains(file.tags, "#tbd/read")
+LIMIT 5
 ```
-
 > [!todo] Выбрать что посмотреть
 ```dataview
 TABLE WITHOUT ID file.link AS Видео
 WHERE contains(file.tags, "#tbd/video")
+LIMIT 5
 ```
-
 > [!success] Курсы
 
 ```dataview
@@ -25,7 +25,19 @@ TABLE WITHOUT ID
 	URL
 FROM "Courses"
 ```
+> [!example] Книги
 
+```dataviewjs
+dv.table(["Книги", "Прогресс", "Тема", "URL"], 
+    dv.pages('"Книги"')
+    .map(b => [
+        b.file.link,
+        `<p><progress max=100 value=${(b.read/b.total*100).toFixed(0)}></progress> ${(b.read/b.total*100).toFixed(0)}%</p>`,
+        b.Тема,
+        b.URL
+    ])
+)
+```
 
 > [!abstract] Рандомные заметки
 ```dataview

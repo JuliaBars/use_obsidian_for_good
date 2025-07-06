@@ -14,7 +14,7 @@
 
 - скачать себе директорию Obsidian целиком
 - открыть директорию Obsidian как Vault
-- установить плагины: Templater и Dataview
+- установить плагины: Templater и Dataview (включить настройку Enable Javascript Queries)
 - кликнуть правой кнопкой мыши в Файловом менеджере и выбрать пункт меню <% create new note from template
 - в появившемся списке выбрать Templates/todo
 
